@@ -1,0 +1,109 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  height: 100vh;
+}
+.title{
+  font-size: 40px;
+  text-align: center;
+  margin: 20px;
+}
+.mem{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.block{
+  position: relative;
+  max-width: 900px;
+  max-height: 1000px;
+  margin: 20px;
+}
+.btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block img{
+  width: 900px;
+  height: auto;
+}
+#createBtn{
+  background-color: #5dd1d9;
+}
+.btn{
+  width: 140px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+}
+#addTextBtn{
+  font-size: 16px;
+  background-color: #b9c6c7;
+  margin-right: 20px;
+}
+#memeText{
+  font-family: Arial;    /* Устанавливаем желаемый шрифт */
+  font-size: 30px;       /* Устанавливаем размер шрифта */
+  background: transparent; /* Прозрачный фон */
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  color: white;
+  position: absolute;
+  font-weight: 500;
+  font-style: normal;
+  top: 21px;
+  left: 100px;
+}
+#memeText::placeholder{
+  color: white;
+}
+.hidden{
+  display: none;
+}
+#fontSize{
+  width: 100px;
+}
+#textStyle{
+  width: 100px;
+}
+.controls{
+  margin-left: 20px;
+}
+label{
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+.file-input label {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  background: #5dd1d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+  margin: 0 auto;
+}
+

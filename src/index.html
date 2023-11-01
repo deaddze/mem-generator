@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Генератор мемов</h1>
+    <div class="file-input">
+      <input type="file" id="inputFile" class="file"  accept="image/png, image/jpeg">
+      <label for="inputFile">Select file</label>
+    </div>
+    <div class="mem">
+      <div class="controls hidden">
+        <label>
+            Размер шрифта: 
+            <input type="number" id="fontSize" value="30">
+        </label>
+        <label>
+            Цвет текста:
+            <input type="color" id="fontColor" value="#FFFFFF">
+        </label>
+        <label>Стиль текста:
+        <select id="textStyle">
+          <option value="normal">Обычный</option>
+          <option value="bold">Жирный</option>
+          <option value="italic">Курсив</option>
+        </select>
+      </label>
+    </div>
+      <div class="block">
+        <input type="text" id="memeText" placeholder="Текст" class="hidden">
+      </div>
+      <div class="btns">
+        <button id="addTextBtn" class="btn hidden">Добавить текст</button>
+        <button id="createBtn" class="btn hidden">Создать</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
